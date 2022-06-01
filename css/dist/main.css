@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 10%;
+  padding: 15px 0;
+}
+
+/* Font and other color 
+
+Font-Color #2d3950
+
+*/
+
+.logo {
+}
+
+.logo a {
+  text-decoration: none;
+}
+
+.logo img {
+}
+
+.main-menu {
+}
+
+.main-menu ul {
+  display: flex;
+}
+
+.main-menu ul li {
+  list-style: none;
+}
+
+.main-menu ul li a {
+  text-decoration: none;
+  margin-left: 30px;
+  color: #2d3950;
+  font-weight: 700;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.main-menu ul li a:hover {
+  color: #15a4fa;
+}
+
+/* ---------Header CSS end here ------------- */
+.hero {
+  background-image: url(/images/bg_Strict.jpg);
+  height: 89vh;
+  width: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-content {
+  text-align: center;
+}
+
+.hero-content h1{
+  font-size: 70px;
+  color: #fff;
+  margin-bottom: 15px;
+}
+.hero-text span{
+    display: block;
+    height: 2px;
+    color: #15a4fa;
+    width: 100%;
+}
+.hero-content p{
+    color: #fff;
+}
+.hero-text {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  top: 50%;
+}
+.hero-text span {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background: #15a4fa;
+  margin-bottom: 10px;
+}
+.hero-content button{
+  padding: 15px;
+  margin-top: 35px;
+  background: transparent;
+  border: 1px solid #15a4fa;
+  font-size: 20px;
+  color: #fff;
+}
+.hero-content button:hover{
+  background-color: #15a4fa;
+  border: 1px solid #fff;
+  transition-duration: 1s;
+}
+.hero-icon {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 0);
+  color: #fff;
+  animation: updown 1s linear infinite;
+  animation-direction: alternate;
+}
+
+@keyframes updown {
+  0%{
+    bottom: 40px;
+  }
+  100%{
+    bottom: 20px;
+  }
+}
